@@ -1,0 +1,1 @@
+# risk score card for vendors. placeholder and will be built out in time 
