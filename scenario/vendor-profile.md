@@ -1,0 +1,1 @@
+# Will discuss the vendors and who they are. Will be built out over time. Place holder for now
