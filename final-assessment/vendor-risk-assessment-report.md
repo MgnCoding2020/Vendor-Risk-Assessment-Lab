@@ -7,8 +7,8 @@
 | **Vendor** | Northwind Payroll Services |
 | **Vendor ID** | V-002 |
 | **Service** | Cloud Payroll & HR platform (SaaS) |
-| **Assessment Date** | YYYY-MM-DD |
-| **Assessor** | [Name / Role] |
+| **Assessment Date** | 2026-06-23 |
+| **Assessor** | Olivia Carter (Owner) |
 | **Inherent Risk** | High |
 | **Residual Risk** | Moderate |
 | **Risk Decision** | **Approve with Conditions** |
@@ -123,6 +123,12 @@ This assessment connects back to the GRC program as follows:
 - GRC program — POA&M (`07-evidence-pack/poam/poam.md`)
 - GRC program — Risk Register, control SA-9
 - NIST SP 800-53 Rev. 5 — SA-9 (External System Services)
+
+---
+
+## Corrections
+
+- **2026-10-30:** the Assessment Date and Assessor fields still held template placeholders. Filled in from the program record: the assessment date matches the vendor inventory (V-002, last assessed 2026-06-23), and the assessor is the Owner, who is accountable and responsible for vendor risk management under the program's RACI. No finding, rating or decision is changed (program alignment item AL-20).
 
 ---
 
