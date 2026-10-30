@@ -14,6 +14,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 | Vendor | Service | Date | Inherent | Residual | Decision | Findings | Program linkage |
 |---|---|---|---|---|---|---|---|
+| [Toast, Inc. (V-001)](assessments/V-001-toast/final-assessment/vendor-risk-assessment-report.md) | POS and card payments; xtraCHEF | 2026-10-30 (in use since 2026-02-01) | High (18/18) | Moderate once conditions close | Continue with Conditions | 4 open (`VRA-V001:F-01`–`F-04`) | POAM-020 (SA-9); PCI DSS 12.8 |
 | [Northwind Payroll Services (V-002)](assessments/V-002-northwind/final-assessment/vendor-risk-assessment-report.md) | Cloud payroll and HR | 2026-06-23 | High | Moderate | Approve with Conditions; **onboarding pending** (pre-go-live conditions open at the 2026-10-30 check) | 4 open, 2 overdue (`VRA-V002:F-01`–`F-04`) | POAM-013 (SA-9) |
 | [Microsoft, Microsoft 365 (V-003)](assessments/V-003-microsoft/final-assessment/vendor-risk-assessment-report.md) | Identity, email, files, intranet | 2026-10-30 (before onboarding) | High (16/18) | Moderate | Approve with Conditions | 5 open (`VRA-V003:F-01`–`F-05`) | POAM-018 (SA-9); change CR-001 |
 
@@ -31,6 +32,10 @@ Each assessment folder documents every stage:
 4. **Findings** (`findings/`): gaps documented
 5. **Remediation tracker** (`remediation/`): per-finding status to closure
 6. **Final report** (`final-assessment/`): consolidated decision
+
+### Toast, Inc. (V-001)
+
+The company's payment service provider and highest-risk vendor, assessed eight months after it went into use. Measured against PCI DSS Requirement 12.8: Toast states it is a PCI DSS Level 1 service provider, but the company held none of the evidence it is required to keep. Start at the [intake](assessments/V-001-toast/intake/vendor-intake.md).
 
 ### Northwind Payroll Services (V-002)
 
@@ -64,7 +69,7 @@ This closes the loop between governance (the program) and operations (the assess
 - Inherent vs. residual risk determination
 - Security due diligence and findings documentation
 - Remediation tracking and governance rollup
-- Scoping judgment (e.g., why PCI DSS Req. 12.8 does **not** apply to a payroll vendor)
+- Scoping judgment (why PCI DSS Req. 12.8 applies to Toast but **not** to a payroll vendor)
 - Shared responsibility: separating what the vendor secures from what the customer must configure
 
 ---
