@@ -126,6 +126,12 @@ This assessment connects back to the GRC program as follows:
 
 ---
 
+## Status Update
+
+- **2026-10-30:** onboarding has **not** proceeded, because the pre-go-live conditions (F-02, F-03) are still open; F-01 and F-04 are past their 90-day targets. See the [remediation tracker](../remediation/remediation-tracker.md). The decision is unchanged: approved with conditions, and go-live waits until F-02 and F-03 close. Note: "internal HR and finance personnel" in this report means, at a company this size, the Owner (payroll) and the Store Manager (timesheets).
+
+---
+
 ## Corrections
 
 - **2026-10-30:** the Assessment Date and Assessor fields still held template placeholders. Filled in from the program record: the assessment date matches the vendor inventory (V-002, last assessed 2026-06-23), and the assessor is the Owner, who is accountable and responsible for vendor risk management under the program's RACI. No finding, rating or decision is changed (program alignment item AL-20).

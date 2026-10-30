@@ -10,8 +10,8 @@ This tracker records the status of each finding through to closure. It is the pe
 |------------|----------|--------------------|-------|--------|--------|
 | F-02 | High | Enforce MFA on all vendor administrative and support accounts | Vendor / IT | Before go-live | In Progress |
 | F-03 | Medium | Add a defined breach-notification SLA to the contract | Owner / Legal | Before go-live | Open |
-| F-01 | Medium | Obtain SOC 2 Type II or interim compensating assurance | Vendor management | Within 90 days | Open |
-| F-04 | Low | Obtain documented data retention and secure-deletion commitments | Vendor management | Within 90 days | Open |
+| F-01 | Medium | Obtain SOC 2 Type II or interim compensating assurance | Vendor management | Within 90 days (by 2026-09-21) | Overdue |
+| F-04 | Low | Obtain documented data retention and secure-deletion commitments | Vendor management | Within 90 days (by 2026-09-21) | Overdue |
 
 ---
 
@@ -19,7 +19,17 @@ This tracker records the status of each finding through to closure. It is the pe
 
 - **Open** — remediation not yet started
 - **In Progress** — remediation underway
+- **Overdue** — past its target with no evidence of remediation
 - **Closed** — remediation verified complete
+
+## Status Checks
+
+Entries are added, never rewritten.
+
+**2026-10-30 (program alignment review):**
+- **Onboarding has not proceeded.** The pre-go-live conditions are not met: F-02 (MFA on vendor admin access) has no confirmation from the vendor, and F-03 (breach-notification clause) is not in the contract. Northwind stays *approved with conditions, onboarding pending*. No company payroll data is sent to the vendor until both close.
+- F-01 and F-04 passed their 90-day targets (2026-09-21) with no update from the vendor. Marked **Overdue** and escalated to the Owner, who chases the vendor.
+- Once F-02 is confirmed, the vendor's payroll contact gets time-limited guest access to the payroll-export folder, under the program's change CR-004.
 
 ## Linkage
 

@@ -14,10 +14,10 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 | Vendor | Service | Date | Inherent | Residual | Decision | Findings | Program linkage |
 |---|---|---|---|---|---|---|---|
-| [Northwind Payroll Services (V-002)](assessments/V-002-northwind/final-assessment/vendor-risk-assessment-report.md) | Cloud payroll and HR | 2026-06-23 | High | Moderate | Approve with Conditions | 4 open (`VRA-V002:F-01`–`F-04`) | POAM-013 (SA-9) |
+| [Northwind Payroll Services (V-002)](assessments/V-002-northwind/final-assessment/vendor-risk-assessment-report.md) | Cloud payroll and HR | 2026-06-23 | High | Moderate | Approve with Conditions; **onboarding pending** (pre-go-live conditions open at the 2026-10-30 check) | 4 open, 2 overdue (`VRA-V002:F-01`–`F-04`) | POAM-013 (SA-9) |
 | [Microsoft, Microsoft 365 (V-003)](assessments/V-003-microsoft/final-assessment/vendor-risk-assessment-report.md) | Identity, email, files, intranet | 2026-10-30 (before onboarding) | High (16/18) | Moderate | Approve with Conditions | 5 open (`VRA-V003:F-01`–`F-05`) | POAM-018 (SA-9); change CR-001 |
 
-**Planned:** offboarding record for Vertex IT Support (V-004), under change CR-003.
+**Planned:** offboarding record for Vertex IT Support (V-004), under change CR-003; time-limited guest access for Northwind's payroll contact, under change CR-004, once F-02 is confirmed.
 
 ---
 
