@@ -8,37 +8,41 @@ It is the operational companion to the **[GRC Security Program Simulation – Bu
 
 ---
 
-## Assessment Scenario
+## Assessments
 
-Burn and Churn Coffee engaged a third-party **cloud payroll and HR vendor**, Northwind Payroll Services, to process employee management and payroll. The vendor handles sensitive employee data — PII, payroll and tax records, and direct-deposit banking details — so it was subject to a formal vendor risk assessment before approval.
+Each vendor assessment has its own folder under `assessments/`, following the same workflow.
 
----
+| Vendor | Service | Date | Inherent | Residual | Decision | Findings | Program linkage |
+|---|---|---|---|---|---|---|---|
+| [Northwind Payroll Services (V-002)](assessments/V-002-northwind/final-assessment/vendor-risk-assessment-report.md) | Cloud payroll and HR | 2026-06-23 | High | Moderate | Approve with Conditions | 4 open (`VRA-V002:F-01`–`F-04`) | POAM-013 (SA-9) |
+| [Microsoft, Microsoft 365 (V-003)](assessments/V-003-microsoft/final-assessment/vendor-risk-assessment-report.md) | Identity, email, files, intranet | 2026-10-30 (before onboarding) | High (16/18) | Moderate | Approve with Conditions | 5 open (`VRA-V003:F-01`–`F-05`) | POAM-018 (SA-9); change CR-001 |
 
-## Assessment Outcome
-
-| | |
-|---|---|
-| **Vendor** | Northwind Payroll Services (V-002) |
-| **Inherent Risk** | High |
-| **Residual Risk** | Moderate |
-| **Decision** | Approve with Conditions |
-| **Open Findings** | 4 (tracked to closure) |
-| **Program Linkage** | POAM-013 under control SA-9 |
+**Planned:** offboarding record for Vertex IT Support (V-004), under change CR-003.
 
 ---
 
 ## Assessment Workflow
 
-Each stage of the assessment is documented in this repository:
+Each assessment folder documents every stage:
 
-1. [Vendor Intake](intake/vendor-intake.md) — service, data, and access captured
-2. [Inherent Risk Score](risk-scoring/inherent-risk-score.md) — risk rated before reviewing controls (High)
-3. [Security Due Diligence Review](due-diligence/security-review.md) — vendor security posture assessed
-4. [Vendor Risk Findings](findings/vendor-risk-findings.md) — gaps documented (F-01–F-04)
-5. [Remediation Tracker](remediation/remediation-tracker.md) — per-finding status to closure
-6. [Final Vendor Risk Assessment Report](final-assessment/vendor-risk-assessment-report.md) — consolidated decision
+1. **Intake** (`intake/`): service, data and access captured
+2. **Inherent risk score** (`risk-scoring/`): risk rated before reviewing controls
+3. **Security due diligence review** (`due-diligence/`): vendor security posture assessed
+4. **Findings** (`findings/`): gaps documented
+5. **Remediation tracker** (`remediation/`): per-finding status to closure
+6. **Final report** (`final-assessment/`): consolidated decision
 
-Supporting context is in [scenario/vendor-profile.md](scenario/vendor-profile.md) and the [glossary](docs/glossary.md).
+### Northwind Payroll Services (V-002)
+
+Burn and Churn Coffee engaged a third-party **cloud payroll and HR vendor** to process employee management and payroll. The vendor handles sensitive employee data (PII, payroll and tax records, direct-deposit banking details), so it was assessed before approval. Start at the [intake](assessments/V-002-northwind/intake/vendor-intake.md); supporting context is in the [vendor profile](assessments/V-002-northwind/scenario/vendor-profile.md).
+
+### Microsoft, Microsoft 365 (V-003)
+
+Assessed **before onboarding**, as part of the planned migration from Google Workspace. Based on Microsoft's public compliance documentation and its shared-responsibility model, which places accounts, identities and data on the customer's side. Most findings are therefore about what the company's own licence allows. Start at the [intake](assessments/V-003-microsoft/intake/vendor-intake.md).
+
+The [glossary](docs/glossary.md) covers terms used across assessments.
+
+*Files moved on 2026-10-30 into per-vendor folders; the old paths hold redirect notes.*
 
 ---
 
@@ -47,8 +51,8 @@ Supporting context is in [scenario/vendor-profile.md](scenario/vendor-profile.md
 This lab and the GRC program are designed to work together:
 
 - The **[GRC program](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop)** holds the vendor inventory, the blank assessment templates (intake questionnaire, inherent risk scoring worksheet, due diligence checklist, assessment template), and the program-level POA&M and risk register.
-- This **lab** executes one full assessment using those templates.
-- The findings flow **back** into the program: the Northwind assessment is recorded in the program's vendor inventory (V-002, status Complete) and rolled up in the program POA&M as **POAM-013** under control **SA-9 (External System Services)**.
+- This **lab** executes full assessments using those templates.
+- The findings flow **back** into the program: each assessment is recorded in the program's vendor inventory and rolled up in the program POA&M under control **SA-9 (External System Services)**: Northwind as **POAM-013**, Microsoft as **POAM-018**.
 
 This closes the loop between governance (the program) and operations (the assessment).
 
@@ -61,6 +65,7 @@ This closes the loop between governance (the program) and operations (the assess
 - Security due diligence and findings documentation
 - Remediation tracking and governance rollup
 - Scoping judgment (e.g., why PCI DSS Req. 12.8 does **not** apply to a payroll vendor)
+- Shared responsibility: separating what the vendor secures from what the customer must configure
 
 ---
 
