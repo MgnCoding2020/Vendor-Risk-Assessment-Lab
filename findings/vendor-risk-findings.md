@@ -19,4 +19,6 @@ This register documents the findings from the due diligence review, with severit
 
 After the planned remediations are applied — most importantly F-02 and F-03 before go-live — residual risk is reduced from High to **Moderate**. Remediation status for each finding is tracked in the [remediation tracker](../remediation/remediation-tracker.md), and the findings roll up to the GRC program's POA&M as **POAM-013** under control **SA-9**.
 
+**Program cross-reference (added 2026-10-30):** outside this repository, these findings are cited as `VRA-V002:F-01` to `VRA-V002:F-04` (assessment of vendor V-002), so they can't be confused with the IAM Access Review Lab's `F-0x` findings. See the program's [identifier conventions](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/00-company-profile/org/identifiers.md).
+
 **Next step:** [Remediation Tracker](../remediation/remediation-tracker.md)

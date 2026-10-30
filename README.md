@@ -1,5 +1,7 @@
 # Vendor Risk Assessment Lab
 
+> Part of the Burn and Churn Coffee security program: [program hub](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop). Company, people, systems and vendors are defined there.
+
 This repository demonstrates the **execution** of a third-party vendor risk assessment, end to end, as part of a broader Governance, Risk, and Compliance (GRC) program.
 
 It is the operational companion to the **[GRC Security Program Simulation – Burn and Churn Coffee](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop)** repository. That repository defines the governance program and the reusable vendor risk management *templates*; this lab puts those templates to work by assessing a real-feeling vendor and feeding the results back into the program.
