@@ -35,7 +35,7 @@ Each assessment folder documents every stage:
 
 ### Toast, Inc. (V-001)
 
-The company's payment service provider and highest-risk vendor, assessed eight months after it went into use. Measured against PCI DSS Requirement 12.8: Toast states it is a PCI DSS Level 1 service provider, but the company held none of the evidence it is required to keep. Start at the [intake](assessments/V-001-toast/intake/vendor-intake.md).
+The company's payment service provider and highest-risk vendor, assessed eight months after it went into use. Measured against PCI DSS Requirement 12.8: Toast states it is a PCI DSS Level 1 service provider, but the company held none of the evidence it is required to keep. Start at the [intake](assessments/V-001-toast/intake/vendor-intake.md). **Update 2026-10-30:** the Owner approved replacing Toast ([CR-005](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-005-toast-pos-replacement.md), once the company's new register passes testing); the conditions stay due until then.
 
 ### Northwind Payroll Services (V-002)
 

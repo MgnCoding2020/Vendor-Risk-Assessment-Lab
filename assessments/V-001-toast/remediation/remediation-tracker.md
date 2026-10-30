@@ -30,4 +30,12 @@ Per-finding status through to closure. The GRC program's POA&M tracks this asses
 
 ---
 
+## Status Checks
+
+| Date | Check |
+|---|---|
+| 2026-10-30 | Toast exit approved under [CR-005](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-005-toast-pos-replacement.md). No change to targets: the findings remain required while Toast is in use. If cutover happens before a target date, the open finding is closed as superseded, with the offboarding evidence as the reason. |
+
+---
+
 *This document is a simulation for educational and portfolio purposes only.*
