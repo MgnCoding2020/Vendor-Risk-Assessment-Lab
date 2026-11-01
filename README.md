@@ -17,6 +17,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 | [Toast, Inc. (V-001)](assessments/V-001-toast/final-assessment/vendor-risk-assessment-report.md) | POS and card payments; xtraCHEF | 2026-10-30 (in use since 2026-02-01) | High (18/18) | Moderate once conditions close | Continue with Conditions | 4 open (`VRA-V001:F-01`–`F-04`) | POAM-020 (SA-9); PCI DSS 12.8 |
 | [Northwind Payroll Services (V-002)](assessments/V-002-northwind/final-assessment/vendor-risk-assessment-report.md) | Cloud payroll and HR | 2026-06-23 | High | Moderate | Approve with Conditions; **onboarding pending** (pre-go-live conditions open at the 2026-10-30 check) | 4 open, 2 overdue (`VRA-V002:F-01`–`F-04`) | POAM-013 (SA-9) |
 | [Microsoft, Microsoft 365 (V-003)](assessments/V-003-microsoft/final-assessment/vendor-risk-assessment-report.md) | Identity, email, files, intranet | 2026-10-30 (before onboarding) | High (16/18) | Moderate | Approve with Conditions | 5 open (`VRA-V003:F-01`–`F-05`) | POAM-018 (SA-9); change CR-001 |
+| [Espresso machine service company (V-011)](assessments/V-011-espresso-service/final-assessment/vendor-risk-assessment-report.md) | Espresso machine servicing, telemetry and **remote diagnostics** | 2026-11-01 (in use since 2026-01-15) | Moderate (12/18) | Low once conditions are met | Continue with Conditions | 5 open (`VRA-V011:F-01`–`F-05`) | POAM-026 (MA-4, SC-7); PR-011 |
 
 **Planned:** offboarding record for Vertex IT Support (V-004), under change CR-003; time-limited guest access for Northwind's payroll contact, under change CR-004, once F-02 is confirmed.
 
@@ -28,7 +29,6 @@ Vendors added to the program's [vendor inventory](https://github.com/MgnCoding20
 |---|---|---|---|
 | Bitwarden, Inc. (V-009) | Password manager for shared admin credentials | Holds every network and vendor admin login; the Free plan has no event log | PR-009, POAM-021 |
 | Cloud camera service (V-010) | Security cameras and cloud recording | Video of customers and staff; footage access and retention | PR-011 §5, POAM-027 |
-| Espresso machine service company (V-011) | Servicing and **remote diagnostics** | Third-party remote access to a device on the store network: the clearest third-party access risk after Toast | PR-011 §4, MA-4, POAM-026 |
 | Temperature monitoring service (V-012) | Fridge sensors and food-safety log | Keeps a food-safety record the shop must be able to produce | PR-011 §6 |
 
 Each will use the same workflow and the 6-factor inherent risk worksheet.
