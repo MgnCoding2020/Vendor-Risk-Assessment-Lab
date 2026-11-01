@@ -20,6 +20,19 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 **Planned:** offboarding record for Vertex IT Support (V-004), under change CR-003; time-limited guest access for Northwind's payroll contact, under change CR-004, once F-02 is confirmed.
 
+### Awaiting assessment
+
+Vendors added to the program's [vendor inventory](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/02-risk-management/vendor-risk-management/vendor-inventory.md) that haven't been assessed yet, with the reason each one matters:
+
+| Vendor | Service | Why it matters | Program linkage |
+|---|---|---|---|
+| Bitwarden, Inc. (V-009) | Password manager for shared admin credentials | Holds every network and vendor admin login; the Free plan has no event log | PR-009, POAM-021 |
+| Cloud camera service (V-010) | Security cameras and cloud recording | Video of customers and staff; footage access and retention | PR-011 §5, POAM-027 |
+| Espresso machine service company (V-011) | Servicing and **remote diagnostics** | Third-party remote access to a device on the store network: the clearest third-party access risk after Toast | PR-011 §4, MA-4, POAM-026 |
+| Temperature monitoring service (V-012) | Fridge sensors and food-safety log | Keeps a food-safety record the shop must be able to produce | PR-011 §6 |
+
+Each will use the same workflow and the 6-factor inherent risk worksheet.
+
 ---
 
 ## Assessment Workflow
@@ -60,6 +73,8 @@ This lab and the GRC program are designed to work together:
 - The findings flow **back** into the program: each assessment is recorded in the program's vendor inventory and rolled up in the program POA&M under control **SA-9 (External System Services)**: Northwind as **POAM-013**, Microsoft as **POAM-018**.
 
 This closes the loop between governance (the program) and operations (the assessment).
+
+**Incident response:** the program's [vendor breach playbook (IRP-006)](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/06-incident-playbooks/IRP-006-vendor-breach.md) lists each vendor's breach-notification commitment, taken from these assessments. Two gaps found here (`VRA-V001:F-03`, no Toast agreement on file; `VRA-V002:F-03`, no notification timeline in the Northwind contract) mean the shop can't yet say when Toast or Northwind would tell it about a breach. After a vendor breach, IRP-006 sends the vendor back here for reassessment.
 
 ---
 
