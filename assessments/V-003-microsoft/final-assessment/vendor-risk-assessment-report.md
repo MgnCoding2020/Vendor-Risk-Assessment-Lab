@@ -49,6 +49,13 @@ Microsoft provides the company's identity provider (Entra ID) and productivity s
 - **Change:** CR-001 (Microsoft 365 migration)
 - **Re-assessment:** annually, or when the licence changes (for example, if a Business Premium trial adds Conditional Access, F-01 can close)
 
+## 7. Status Updates
+
+| Date | Update |
+|---|---|
+| 2026-11-01 | **Customer-side backups.** Under the shared-responsibility model the company owns its Microsoft 365 data, and Microsoft's recycle bin and version history are not backups. The program now keeps its own monthly encrypted offline copies and tests restores quarterly ([PR-012](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/05-procedures/PR-012-backup-and-recovery.md), CP-9 and CP-10). No change to the decision or the findings. |
+| 2026-11-01 | **Breach notification.** Microsoft's 72-hour commitment is recorded in the program's vendor breach playbook ([IRP-006](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/06-incident-playbooks/IRP-006-vendor-breach.md) §4). |
+
 ---
 
 *This report is a simulation for educational and portfolio purposes only.*
