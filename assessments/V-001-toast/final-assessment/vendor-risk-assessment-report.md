@@ -54,6 +54,7 @@ Already tracked elsewhere: POS terminal inspection (POAM-004); unnecessary POS a
 | Date | Update |
 |---|---|
 | 2026-10-30 | **Exit approved.** The Owner approved replacing Toast under [CR-005](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-005-toast-pos-replacement.md), blocked until the company's new register passes acceptance testing. The risk decision above stands until cutover: Toast still processes the company's card payments, so conditions 1 to 3 and findings F-01 to F-04 stay due on their dates. At cutover, Toast is offboarded (account closed, terminal returned or wiped, written confirmation), recorded here as exit evidence. |
+| 2026-11-02 | **Conditions deferred.** With Toast leaving, the Owner accepted the risk of not collecting its documents or completing a Toast-era SAQ until it exits (program exception EXC-007, expiring 2027-01-31). Toast remains a PCI DSS Level 1 service provider by its own public statements; device inspections continue. |
 
 ---
 

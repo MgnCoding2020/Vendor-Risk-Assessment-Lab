@@ -2,9 +2,9 @@
 
 > Part of the Burn and Churn Coffee security program: [program hub](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop). Company, people, systems and vendors are defined there.
 
-This repository demonstrates the **execution** of a third-party vendor risk assessment, end to end, as part of a broader Governance, Risk, and Compliance (GRC) program.
+This repository demonstrates the **execution** of third-party vendor risk management, end to end, as part of a broader Governance, Risk, and Compliance (GRC) program: eight vendor assessments and one vendor exit, each documented from intake to decision.
 
-It is the operational companion to the **[GRC Security Program Simulation – Burn and Churn Coffee](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop)** repository. That repository defines the governance program and the reusable vendor risk management *templates*; this lab puts those templates to work by assessing a real-feeling vendor and feeding the results back into the program.
+It is the operational companion to the **[GRC Security Program Simulation – Burn and Churn Coffee](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop)** repository. That repository defines the governance program and the reusable vendor risk management *templates*; this lab puts those templates to work, following the program's [Third-Party Risk Management Policy (P-008)](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/04-policies/P-008-third-party-risk.md), and feeds the results back into the program. Real vendors (Toast, Microsoft, Bitwarden) are assessed from their public compliance documents; fictional vendors from simulated questionnaire answers, labelled as such.
 
 ---
 
@@ -46,7 +46,7 @@ Each assessment folder documents every stage:
 
 ### Toast, Inc. (V-001)
 
-The company's payment service provider and highest-risk vendor, assessed eight months after it went into use. Measured against PCI DSS Requirement 12.8: Toast states it is a PCI DSS Level 1 service provider, but the company held none of the evidence it is required to keep. Start at the [intake](assessments/V-001-toast/intake/vendor-intake.md). **Update 2026-10-30:** the Owner approved replacing Toast ([CR-005](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-005-toast-pos-replacement.md), once the company's new register passes testing); the conditions stay due until then.
+The company's payment service provider and highest-risk vendor, assessed eight months after it went into use. Measured against PCI DSS Requirement 12.8: Toast states it is a PCI DSS Level 1 service provider, but the company held none of the evidence it is required to keep. Start at the [intake](assessments/V-001-toast/intake/vendor-intake.md). **Update 2026-10-30:** the Owner approved replacing Toast ([CR-005](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-005-toast-pos-replacement.md)). **Update 2026-11-02:** because Toast is leaving, its conditions are deferred under program exception EXC-007 until it exits, lapsing on 2027-01-31 if the change slips.
 
 ### Northwind Payroll Services (V-002)
 
@@ -55,6 +55,22 @@ Burn and Churn Coffee engaged a third-party **cloud payroll and HR vendor** to p
 ### Microsoft, Microsoft 365 (V-003)
 
 Assessed **before onboarding**, as part of the planned migration from Google Workspace. Based on Microsoft's public compliance documentation and its shared-responsibility model, which places accounts, identities and data on the customer's side. Most findings are therefore about what the company's own licence allows. Start at the [intake](assessments/V-003-microsoft/intake/vendor-intake.md).
+
+### Internet service provider (V-008)
+
+Scored Moderate, not Low: the provider manages the router at the edge of the store network, and everything depends on the connection. The answer is to treat the router as outside the network and plan for outages. Start at the [report](assessments/V-008-internet-provider/final-assessment/vendor-risk-assessment-report.md).
+
+### Bitwarden (V-009)
+
+The password manager, assessed **before onboarding**. Strong, publicly evidenced security (zero-knowledge encryption, SOC 2 Type II, ISO 27001); the gaps come from the free plan and from zero-knowledge itself (no vendor recovery). Start at the [report](assessments/V-009-bitwarden/final-assessment/vendor-risk-assessment-report.md).
+
+### Connected-device vendors (V-010, V-011, V-012)
+
+Three vendors found already in use, so each decision is continue, conditions or exit. The **espresso machine service company** can control its machine remotely on the same network as the POS; the **camera service** left a local video stream open with a default password; the **temperature service** keeps a food-safety record tied to one person's phone. Start at the [V-011 report](assessments/V-011-espresso-service/final-assessment/vendor-risk-assessment-report.md).
+
+### Offboarding: Vertex IT Support (V-004)
+
+The model for a vendor exit: what the vendor holds, knowledge transfer, every account removed, credentials rotated, data returned or deleted with confirmation, sign-off. Prepared for the 2026-11-15 handover under change CR-003. See the [offboarding record](offboarding/V-004-vertex-msp/offboarding-record.md).
 
 The [glossary](docs/glossary.md) covers terms used across assessments.
 
@@ -68,11 +84,11 @@ This lab and the GRC program are designed to work together:
 
 - The **[GRC program](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop)** holds the vendor inventory, the blank assessment templates (intake questionnaire, inherent risk scoring worksheet, due diligence checklist, assessment template), and the program-level POA&M and risk register.
 - This **lab** executes full assessments using those templates.
-- The findings flow **back** into the program: each assessment is recorded in the program's vendor inventory and rolled up in the program POA&M under control **SA-9 (External System Services)**: Northwind as **POAM-013**, Microsoft as **POAM-018**.
+- The findings flow **back** into the program: each assessment is recorded in the program's vendor inventory and rolled up in the program POA&M: Toast **POAM-020**, Northwind **POAM-013**, Microsoft **POAM-018** (all SA-9); Bitwarden **POAM-021** (IA-5); the connected-device vendors **POAM-026** and **POAM-027**; the internet provider **POAM-015** and **POAM-005**. Accepted risks go to the program's [exception register](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/02-risk-management/risk-exceptions.md).
 
 This closes the loop between governance (the program) and operations (the assessment).
 
-**Incident response:** the program's [vendor breach playbook (IRP-006)](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/06-incident-playbooks/IRP-006-vendor-breach.md) lists each vendor's breach-notification commitment, taken from these assessments. Two gaps found here (`VRA-V001:F-03`, no Toast agreement on file; `VRA-V002:F-03`, no notification timeline in the Northwind contract) mean the shop can't yet say when Toast or Northwind would tell it about a breach. After a vendor breach, IRP-006 sends the vendor back here for reassessment.
+**Incident response:** the program's [vendor breach playbook (IRP-006)](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/06-incident-playbooks/IRP-006-vendor-breach.md) lists each vendor's breach-notification commitment, taken from these assessments. Microsoft and the camera service commit to 72 hours. Gaps found here: no Toast agreement on file (`VRA-V001:F-03`), and no notification timeline from Northwind (`VRA-V002:F-03`), the espresso service (`VRA-V011:F-04`), the temperature service (`VRA-V012:F-04`) or the internet provider (`VRA-V008:F-04`); Bitwarden is on standard terms (`VRA-V009:F-05`). After a vendor breach, IRP-006 sends the vendor back here for reassessment.
 
 ---
 
@@ -84,6 +100,10 @@ This closes the loop between governance (the program) and operations (the assess
 - Remediation tracking and governance rollup
 - Scoping judgment (why PCI DSS Req. 12.8 applies to Toast but **not** to a payroll vendor)
 - Shared responsibility: separating what the vendor secures from what the customer must configure
+- Assessing vendors already in use (continue, conditions or exit), and assessing before onboarding
+- Proportionate depth by risk tier, with honest scoring (the ISP scored Moderate, not the expected Low)
+- Vendor exit: a documented offboarding record
+- Risk acceptance tied to a planned exit (Toast's conditions deferred until it leaves, with a fallback date)
 
 ---
 
