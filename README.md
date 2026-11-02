@@ -21,6 +21,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 | [Bitwarden, password manager (V-009)](assessments/V-009-bitwarden/final-assessment/vendor-risk-assessment-report.md) | Shared admin credentials (Free organization) | 2026-11-02 (before onboarding, CR-003) | Moderate (13/18) | Low once conditions are met | Approve with Conditions | 5 open (`VRA-V009:F-01`–`F-05`; F-01 accepted as EXC-006) | POAM-021 (IA-5); PR-009 |
 | [Cloud camera service (V-010)](assessments/V-010-camera-service/final-assessment/vendor-risk-assessment-report.md) | Security cameras and cloud recording | 2026-11-02 (in use since 2026-01-20) | Moderate (12/18) | Low once conditions are met | Continue with Conditions | 4 open (`VRA-V010:F-01`–`F-04`) | POAM-027 (PE-6), POAM-026; PR-011 |
 | [Temperature monitoring service (V-012)](assessments/V-012-temperature-monitoring/final-assessment/vendor-risk-assessment-report.md) | Fridge sensors, food-safety log and alerts | 2026-11-02 (in use since 2026-03-01) | Moderate (9/18) | Low once conditions are met | Continue with Conditions | 4 open (`VRA-V012:F-01`–`F-04`) | POAM-026; PR-011 |
+| [Internet service provider (V-008)](assessments/V-008-internet-provider/final-assessment/vendor-risk-assessment-report.md) | Broadband and a provider-managed router | 2026-11-02 (in use since the shop opened) | Moderate (10/18) | Low once conditions are met | Continue with Conditions | 4 open (`VRA-V008:F-01`–`F-04`) | POAM-015, POAM-005 |
 
 **Offboarding:** [Vertex IT Support (V-004)](offboarding/V-004-vertex-msp/offboarding-record.md), under change CR-003: record prepared, completed at the handover on 2026-11-15.
 
@@ -28,11 +29,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 ### Awaiting assessment
 
-| Vendor | Service | Why it matters | Program linkage |
-|---|---|---|---|
-| Internet service provider (V-008) | Store internet; the provider manages the router | Every card payment and cloud service depends on it; not yet even scored on the worksheet | P-008 §3; PR-005 (outages) |
-
-Vendors that don't need an assessment: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google (being offboarded under CR-001).
+None. Every vendor that needs an assessment has one. Vendors that don't: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google (being offboarded under CR-001).
 
 ---
 
