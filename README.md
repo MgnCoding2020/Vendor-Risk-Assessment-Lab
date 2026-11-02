@@ -18,6 +18,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 | [Northwind Payroll Services (V-002)](assessments/V-002-northwind/final-assessment/vendor-risk-assessment-report.md) | Cloud payroll and HR | 2026-06-23 | High | Moderate | Approve with Conditions; **onboarding pending** (pre-go-live conditions open at the 2026-10-30 check) | 4 open, 2 overdue (`VRA-V002:F-01`–`F-04`) | POAM-013 (SA-9) |
 | [Microsoft, Microsoft 365 (V-003)](assessments/V-003-microsoft/final-assessment/vendor-risk-assessment-report.md) | Identity, email, files, intranet | 2026-10-30 (before onboarding) | High (16/18) | Moderate | Approve with Conditions | 5 open (`VRA-V003:F-01`–`F-05`) | POAM-018 (SA-9); change CR-001 |
 | [Espresso machine service company (V-011)](assessments/V-011-espresso-service/final-assessment/vendor-risk-assessment-report.md) | Espresso machine servicing, telemetry and **remote diagnostics** | 2026-11-01 (in use since 2026-01-15) | Moderate (12/18) | Low once conditions are met | Continue with Conditions | 5 open (`VRA-V011:F-01`–`F-05`) | POAM-026 (MA-4, SC-7); PR-011 |
+| [Bitwarden, password manager (V-009)](assessments/V-009-bitwarden/final-assessment/vendor-risk-assessment-report.md) | Shared admin credentials (Free organization) | 2026-11-02 (before onboarding, CR-003) | Moderate (13/18) | Low once conditions are met | Approve with Conditions | 5 open (`VRA-V009:F-01`–`F-05`; F-01 accepted as EXC-006) | POAM-021 (IA-5); PR-009 |
 
 **Offboarding:** [Vertex IT Support (V-004)](offboarding/V-004-vertex-msp/offboarding-record.md), under change CR-003: record prepared, completed at the handover on 2026-11-15.
 
@@ -29,7 +30,6 @@ Vendors added to the program's [vendor inventory](https://github.com/MgnCoding20
 
 | Vendor | Service | Why it matters | Program linkage |
 |---|---|---|---|
-| Bitwarden, Inc. (V-009) | Password manager for shared admin credentials | Holds every network and vendor admin login; the Free plan has no event log | PR-009, POAM-021 |
 | Cloud camera service (V-010) | Security cameras and cloud recording | Video of customers and staff; footage access and retention | PR-011 §5, POAM-027 |
 | Temperature monitoring service (V-012) | Fridge sensors and food-safety log | Keeps a food-safety record the shop must be able to produce | PR-011 §6 |
 
