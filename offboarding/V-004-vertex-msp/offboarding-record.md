@@ -21,7 +21,7 @@ Ending a vendor relationship is as much a third-party risk event as starting one
 
 ## 2. What Vertex Has Today
 
-From the Q1 2026 access review ([IAM access matrix](https://github.com/MgnCoding2020/IAM-Access-Review-Lab/blob/main/evidence/user-access-matrix.csv)) and the program's records:
+From the Q1 2026 access review ([IAM access matrix](https://github.com/MgnCoding2020/IAM-Access-Review-Lab/blob/main/reviews/2026-Q1/evidence/user-access-matrix.csv)) and the program's records:
 
 | Access or asset | Detail | Risk |
 |---|---|---|
