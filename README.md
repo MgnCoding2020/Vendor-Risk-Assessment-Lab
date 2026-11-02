@@ -19,7 +19,9 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 | [Microsoft, Microsoft 365 (V-003)](assessments/V-003-microsoft/final-assessment/vendor-risk-assessment-report.md) | Identity, email, files, intranet | 2026-10-30 (before onboarding) | High (16/18) | Moderate | Approve with Conditions | 5 open (`VRA-V003:F-01`–`F-05`) | POAM-018 (SA-9); change CR-001 |
 | [Espresso machine service company (V-011)](assessments/V-011-espresso-service/final-assessment/vendor-risk-assessment-report.md) | Espresso machine servicing, telemetry and **remote diagnostics** | 2026-11-01 (in use since 2026-01-15) | Moderate (12/18) | Low once conditions are met | Continue with Conditions | 5 open (`VRA-V011:F-01`–`F-05`) | POAM-026 (MA-4, SC-7); PR-011 |
 
-**Planned:** offboarding record for Vertex IT Support (V-004), under change CR-003; time-limited guest access for Northwind's payroll contact, under change CR-004, once F-02 is confirmed.
+**Offboarding:** [Vertex IT Support (V-004)](offboarding/V-004-vertex-msp/offboarding-record.md), under change CR-003: record prepared, completed at the handover on 2026-11-15.
+
+**Planned:** time-limited guest access for Northwind's payroll contact, under change CR-004, once F-02 is confirmed.
 
 ### Awaiting assessment
 
