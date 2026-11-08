@@ -29,7 +29,12 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 ### Awaiting assessment
 
-None. Every vendor that needs an assessment has one. Vendors that don't: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google (being offboarded under CR-001).
+| Vendor | Why it's due | When | Tracked as |
+|---|---|---|---|
+| **Cloudflare (V-014)**, website hosting and database | **Overdue.** In use since 2026-11-02 and holding staff data since 2026-11-07, never assessed; [P-008](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/04-policies/P-008-third-party-risk.md) step 5 makes it due at once | Before the website's Phase 3 puts orders in its database | Hub POAM-036 |
+| **Stripe (V-013)**, online and counter payments (test mode) | High inherent risk; card-payment provider for [CR-002](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-002-online-ordering-website.md) and CR-005 | Before the website's Phase 4 (Stripe Terminal) | Hub POAM-036, CR-002 exit criteria |
+
+Vendors that don't need one: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google (being offboarded under CR-001).
 
 ---
 
