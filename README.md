@@ -2,7 +2,7 @@
 
 > Part of the Burn and Churn Coffee security program: [program hub](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop). Company, people, systems and vendors are defined there.
 
-This repository demonstrates the **execution** of third-party vendor risk management, end to end, as part of a broader Governance, Risk, and Compliance (GRC) program: nine vendor assessments and one vendor exit, each documented from intake to decision.
+This repository demonstrates the **execution** of third-party vendor risk management, end to end, as part of a broader Governance, Risk, and Compliance (GRC) program: ten vendor assessments and one vendor exit, each documented from intake to decision.
 
 It is the operational companion to the **[GRC Security Program Simulation – Burn and Churn Coffee](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop)** repository. That repository defines the governance program and the reusable vendor risk management *templates*; this lab puts those templates to work, following the program's [Third-Party Risk Management Policy (P-008)](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/04-policies/P-008-third-party-risk.md), and feeds the results back into the program. Real vendors (Toast, Microsoft, Bitwarden) are assessed from their public compliance documents; fictional vendors from simulated questionnaire answers, labelled as such.
 
@@ -23,6 +23,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 | [Temperature monitoring service (V-012)](assessments/V-012-temperature-monitoring/final-assessment/vendor-risk-assessment-report.md) | Fridge sensors, food-safety log and alerts | 2026-11-02 (in use since 2026-03-01) | Moderate (9/18) | Low once conditions are met | Continue with Conditions | 4 open (`VRA-V012:F-01`–`F-04`) | POAM-026; PR-011 |
 | [Internet service provider (V-008)](assessments/V-008-internet-provider/final-assessment/vendor-risk-assessment-report.md) | Broadband and a provider-managed router | 2026-11-02 (in use since the shop opened) | Moderate (10/18) | Low once conditions are met | Continue with Conditions | 4 open (`VRA-V008:F-01`–`F-04`) | POAM-015, POAM-005 |
 | [Cloudflare, website hosting and database (V-014)](assessments/V-014-cloudflare/final-assessment/vendor-risk-assessment-report.md) | Website, staff portal, API and database (Workers Free plan) | 2026-11-08 (in use since 2026-11-02; **assessed late**) | Moderate (13/18; High once the register replaces Toast) | Low once conditions are met | Continue with Conditions | 5 open (`VRA-V014:F-01`–`F-05`; F-03 accepted) | POAM-036 (SA-9); CR-002 |
+| [Stripe, card payments (V-013)](assessments/V-013-stripe/final-assessment/vendor-risk-assessment-report.md) | Card payments at the counter (Terminal, simulated reader) and online (Checkout); refunds; **test mode only** | 2026-11-10 (in use since 2026-11-09; **assessed a day late**) | High (16/18; 17 at the CR-005 cutover) | Low once conditions are met | Continue with Conditions | 6 open (`VRA-V013:F-01`–`F-06`; F-03 and F-04 accepted) | POAM-037 (SA-9, PCI DSS 12.8); CR-002, CR-005 |
 
 **Offboarding:** [Vertex IT Support (V-004)](offboarding/V-004-vertex-msp/offboarding-record.md), under change CR-003: record prepared, completed at the handover on 2026-11-15.
 
@@ -30,9 +31,7 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 ### Awaiting assessment
 
-| Vendor | Why it's due | When | Tracked as |
-|---|---|---|---|
-| **Stripe (V-013)**, online and counter payments (test mode) | High inherent risk; card-payment provider for [CR-002](https://github.com/MgnCoding2020/grc-paper-project-coffee-shop/blob/main/09-change-management/CR-002-online-ordering-website.md) and CR-005 | Before the website's Phase 4 (Stripe Terminal) | Hub POAM-036, CR-002 exit criteria |
+None. Stripe (V-013) was the last, assessed 2026-11-10.
 
 Vendors that don't need one: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google (being offboarded under CR-001).
 
@@ -72,6 +71,10 @@ The password manager, assessed **before onboarding**. Strong, publicly evidenced
 ### Cloudflare (V-014)
 
 Hosting for the company's website and its database, assessed **late**: in use from 2026-11-02 and holding staff data from 2026-11-07 before anyone assessed it, which the program's own alignment pass caught (hub AL-30). Cloudflare's security is well evidenced (SOC 2 Type II naming Workers and D1, ISO 27001); the conditions come from the Free plan, self-serve terms and a rate-limiting feature that doesn't work on this account, which the website compensated for in its own design. Start at the [report](assessments/V-014-cloudflare/final-assessment/vendor-risk-assessment-report.md).
+
+### Stripe (V-013)
+
+The company's card-payment provider for the counter register (Stripe Terminal with a simulated reader) and, later, online orders, replacing Toast's payments under CR-005. Assessed **a day after it went into use**: the owner had decided to assess it before card payments went live, and the build went first. Stripe's security is strongly evidenced (PCI DSS Service Provider Level 1, an unqualified SOC 3 that names Terminal, an isolated card data vault). The conditions are mostly the company's own: current assurance documents (the public SOC 3 period ended 2025-09-30), its own PCI scope and SAQ type, and account housekeeping after a test key was pasted into a chat. The account runs in test mode only. Start at the [report](assessments/V-013-stripe/final-assessment/vendor-risk-assessment-report.md).
 
 ### Connected-device vendors (V-010, V-011, V-012)
 
