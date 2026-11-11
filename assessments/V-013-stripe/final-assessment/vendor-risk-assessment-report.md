@@ -65,7 +65,7 @@ The SOC 2 Type II and the PCI AOC are confidential and provided on request; they
    - the exposed `sk_test_` key expired;
    - signed, replay-checked webhooks;
    - test mode enforced in code (website ADR-0006, ADR-0035).
-2. **By 2026-11-15:** recovery codes in the password manager, and Stripe's security history and request log in the weekly review from 2026-11-14 (F-05).
+2. **By 2026-11-15:** recovery codes in the Owner's password manager (SYS-022), and Stripe's security history and request log in the weekly review from 2026-11-14 (F-05).
 3. **By 2026-12-10:**
    - current SOC 2 Type II (or bridge letter) and PCI service-provider AOC reviewed, with the 12.8.5 responsibility split recorded (F-01);
    - sub-processor notices confirmed (F-06).

@@ -44,7 +44,7 @@ The conditions come from how the company uses the service:
 ## 4. Conditions
 
 1. **Already met (2026-11-07):** no anonymous request writes to the database, compensating for F-04 (website ADR-0030).
-2. **By 2026-11-15:** recovery codes stored in the password manager, and the Cloudflare account audit log in the weekly review (F-05). `audit_log` exported with each weekly review from 2026-11-14 (F-02).
+2. **By 2026-11-15:** recovery codes stored in the Owner's password manager (SYS-022), and the Cloudflare account audit log in the weekly review (F-05). `audit_log` exported with each weekly review from 2026-11-14 (F-02).
 3. **By 2026-12-08:** SOC 2 Type II and PCI DSS AOC reviewed and recorded (F-01).
 4. **Before the first website route that calls a paid service** (Stripe, website Phase 4): the website's own rate limiter, and a re-check of Cloudflare's fix (F-04).
 5. **Before the register replaces Toast** (CR-005):
