@@ -12,7 +12,7 @@ Tracked in the GRC program's POA&M under **POAM-037** (SA-9; PCI DSS 12.8).
 | F-02 | Medium | Write the website's `docs/pci-scope.md` for both channels with the SAQ type verified against current PCI SSC and Stripe documents; update the hub crosswalk | Owner (Michael writes it) | Before CR-002 step 6 (online ordering) | Open |
 | F-03 | Low | Accept standard breach-notice terms; yearly review | Owner | 2027-11-10 | Open (accepted) |
 | F-04 | Low | Accept no uptime commitment; compensating controls in place (cash fallback, the register's own status check); re-decide at CR-005 | Owner | CR-005 cutover | Open (accepted) |
-| F-05 | Medium | Recovery codes into Bitwarden's admin collection; Stripe security history and request log in the weekly log review; restricted key rotated yearly | IT Technician (codes, review); Owner (key) | 2026-11-15 (codes); 2026-11-14 (first review); 2027-11-09 (key) | Open |
+| F-05 | Medium | Recovery codes into the Owner's password manager (SYS-022; revised 2026-11-11, was Bitwarden); Stripe security history and request log in the weekly log review; restricted key rotated yearly | Owner (codes, key); IT Technician (review) | 2026-11-15 (codes); 2026-11-14 (first review); 2027-11-09 (key) | Open |
 | F-06 | Low | Confirm with Stripe how to subscribe to sub-processor changes, then subscribe | Owner | 2026-12-10 | Open |
 
 ---

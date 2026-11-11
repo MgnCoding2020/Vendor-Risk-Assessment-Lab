@@ -31,9 +31,11 @@ Each vendor assessment has its own folder under `assessments/`, following the sa
 
 ### Awaiting assessment
 
-None. Stripe (V-013) was the last, assessed 2026-11-10.
+- **Google LLC, Google Password Manager (V-015):** the Owner's password manager for break-glass passwords and admin recovery codes, in use since 2026-11-11. Due by 2026-11-25 (program POAM-038; accepted meanwhile as EXC-009).
 
-Vendors that don't need one: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google (being offboarded under CR-001).
+Stripe (V-013) was assessed 2026-11-10.
+
+Vendors that don't need one: V-004 Vertex (offboarding record instead), V-005 NorthPeak (inactive), V-006 Intuit and V-007 Google Workspace (being offboarded under CR-001; separate from V-015).
 
 ---
 
